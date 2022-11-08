@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    width:100vw;
+    height: 100vh;
+    user-select: none;
+}
+
+header{
+    width:100%;
+    height: 50px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 1px 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header .logo{
+    font-size: 18px;
+}
+
+header .logo span{
+    color:#2980b9;
+}
+
+.navbar{
+    width:700px;
+    transition: 0.5s;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-links li{
+    list-style: none;
+    position: relative;
+    display: block;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    font-size: 15px;
+    color:black;
+}
+
+.nav-links li a.active{
+    color:#2980b9;
+}
+
+.nav-links li a:hover{
+    color:#2980b9; 
+}
+
+.nav-links li a span{
+    font-size: 15px;
+}
+
+.nested-navbar{
+    position: absolute;
+    top:36px;
+    width: 200px;
+    height: 140px;
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 15px;
+   display: none;
+}
+
+#check1:checked ~ .nested-navbar, #check2:checked ~ .nested-navbar{
+   display: block;
+}
+
+.nested-navbar li{
+    list-style: none;
+    padding:10px;
+    font-size: 15px;
+    color:rgba(0, 0, 0, 0.625);
+}
+
+.nested-navbar li:nth-child(1){
+    padding: 10px 10px 0 10px;
+}
+
+.nested-navbar li:nth-child(2){
+    padding:0 10px 10px 10px;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.03);
+}
+
+.nested-navbar li:nth-child(3){
+    border-bottom: solid 1px rgba(0, 0, 0, 0.03);
+
+}
+
+.icon-bar{
+    display: none;
+}
+
+.fa-solid{
+    font-size: 20px;
+}
+
+#check, #check1, #check2{
+    display:none;
+}
+
+
+@media screen and (max-width:991px){
+    header{
+        position: relative;
+    }
+    .navbar{
+        width:100%;
+        position: absolute;
+        top:50px;
+        left:-50%;
+    }
+    
+    .nav-links{
+        flex-direction: column;
+    }
+    
+    .nav-links li{
+        padding:20px;
+        position: relative;
+        display: block;
+    }
+
+    .nested-navbar{
+        position: relative;
+        top:10px;
+        bottom:0;
+        height:100%;
+        width:50%;
+        left:-160px;
+    }
+
+    .icon-bar{
+        display: block;
+    }
+
+    #check:checked ~ .navbar{
+        left:20px;
+    }
+
+    #check1:checked ~ .nested-navbar, #check2:checked ~ .nested-navbar{
+        left:0px;
+    }
+}
+
+

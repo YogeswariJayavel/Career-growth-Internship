@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Awesome<span>logo</span></div>
+      <input type="checkbox" id="check" />
+      <label for="check" class="icon-bar">
+        <i class="fa-solid fa-bars"></i
+      ></label>
+      <div class="navbar">
+        <ul class="nav-links">
+          <li><a href="#" class="active">Home</a></li>
+          <li>
+            <a href="#"
+              >Categories
+              <label for="check1"
+                ><ion-icon name="chevron-down-outline"></ion-icon></label
+            ></a>
+            <input type="checkbox" name="nav-menu" id="check1" />
+            <ul class="nested-navbar">
+              <li>Actions</li>
+              <li>Something else here</li>
+              <li>Separated Link</li>
+              <li>One more separated link.</li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"
+              >Blog
+              <label for="check2"
+                ><ion-icon name="chevron-down-outline"></ion-icon></label
+            ></a>
+            <input type="checkbox" name="nav-menu" id="check2" />
+            <ul class="nested-navbar">
+              <li>Some category</li>
+              <li>Some another category</li>
+              <li>Separated Link</li>
+              <li>One more separated link.</li>
+            </ul>
+          </li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Signin</a></li>
+        </ul>
+      </div>
+    </header>
+    <script src="js/script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/90645f031a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
