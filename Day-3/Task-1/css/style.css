@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  height: 400px;
+  color: rgba(0, 0, 0, 0.653);
+  margin-top: 50px;
+}
+
+.card:nth-child(1) {
+  flex-basis: 20%;
+  position: relative;
+  padding: 0;
+  border: solid 1px #e6e6e2;
+  border-radius: 5px;
+  gap: 10px;
+}
+
+.card:nth-child(2),
+.card:nth-child(3),
+.card:nth-child(4) {
+  gap: 50px;
+  background-color: #f4f4f3;
+  border: solid 1px #e6e6e2;
+  flex-basis: 20%;
+  padding: 20px;
+  line-height: 25px;
+  border-radius: 5px;
+}
+
+.card .card-header {
+  width: 100%;
+  background-color: #f4f4f3;
+  padding: 15px;
+}
+
+.card .card-body {
+  padding: 15px;
+  width: 100%;
+}
+
+.card .card-footer {
+  padding: 15px;
+  position: absolute;
+  bottom: 0;
+  background-color: #f4f4f3;
+  width: 100%;
+}
+
+@media screen and (max-width:991px){
+    .card .card-body{
+        position: relative;
+        padding:20px 15px 45px 15px;
+    }
+
+    .card .card-header{
+        position: relative;
+    }
+
+    .card .card-footer{
+        position: relative;
+    }
+    .card:nth-child(1){
+        flex-basis: 100%;
+    }
+
+    .card:nth-child(2),
+    .card:nth-child(3),
+    .card:nth-child(4){
+        flex-basis: 100%;
+        margin-top:20px;
+    }   
+}
