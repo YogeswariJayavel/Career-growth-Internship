@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-color: #393E4C;
+    display: grid;
+    grid-template-areas: 
+    'header header header'
+    'sidebar content-1 content-1'
+    'sidebar content-2 content-3'
+    'footer footer footer';
+    text-align: center;
+    grid-template-rows: 80px 200px 200px 100px;
+    grid-template-columns: 1fr 1.8fr 1.8fr;
+    padding:20px 30px;
+    row-gap: 15px;
+    color:white;
+    column-gap: 15px;
+}
+
+.header,
+.sidebar,
+.content-1,
+.content-2,
+.content-3,
+.footer{
+    padding:20px;
+    border:solid 5px black;
+    font-weight: bold;
+}
+
+.header{
+    line-height:30px;
+    grid-area: header;
+    background: rgb(114,89,219);
+    background: linear-gradient(to right, rgba(114,89,219,1) 0%, rgba(138,118,225,1) 99%, rgba(114,89,219,1) 100%, rgba(114,89,219,1) 100%, rgba(90,66,230,1) 100%);
+}
+
+.sidebar{
+    line-height:380px;
+    grid-area: sidebar;
+    background: rgb(58,213,205);
+    background: linear-gradient(to bottom, rgba(58,213,205,1) 4%, rgba(55,205,197,1) 22%, rgba(47,182,175,1) 71%, rgba(43,169,162,1) 100%, rgba(58,213,205,1) 100%, rgba(58,213,205,1) 100%, rgba(58,213,205,1) 100%, rgba(130,108,223,1) 100%, rgba(127,105,222,1) 100%, rgba(138,118,225,1) 100%, rgba(114,89,219,1) 100%, rgba(114,89,219,1) 100%, rgba(90,66,230,1) 100%);
+}
+
+.content-1{
+    line-height:150px;
+    grid-area: content-1;
+    background: rgb(89,103,225);
+    background: linear-gradient(90deg, rgba(89,103,225,1) 56%, rgba(32,173,249,1) 100%);
+}
+
+.content-2{
+    line-height: 150px;
+    grid-area: content-2;
+    background: rgb(93,98,223);
+    background: linear-gradient(120deg, rgba(93,98,223,1) 50%, rgba(43,192,236,1) 100%);
+}
+
+.content-3{
+    line-height: 150px;
+    grid-area: content-3;
+    background: rgb(91,101,225);
+    background: linear-gradient(120deg, rgba(91,101,225,1) 50%, rgba(37,182,243,1) 100%);
+}
+
+.footer{
+    line-height: 50px;
+    grid-area: footer;
+    background: rgb(119,95,220);
+    background: linear-gradient(120deg, rgba(119,95,220,1) 50%, rgba(142,122,226,1) 100%);
+}
