@@ -137,6 +137,12 @@ body {
   font-weight: bold;
   font-size: 11px;
   color: rgba(0, 0, 0, 0.718);
+  letter-spacing: 1px;
+}
+
+.front .submit:hover, .back .submit:hover{
+  background-color:#0D215A;
+  color: rgba(255, 255, 255, 0.651);
 }
 
 .front a {
