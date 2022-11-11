@@ -1,2 +1,2 @@
 # Web-development-Internship
-Internship projects designed  by HTML, CSS and JAVASCRIPT
+Internship projects developed by HTML, CSS and JAVASCRIPT
