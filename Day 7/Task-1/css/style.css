@@ -1,0 +1,100 @@
+.car-icon{
+    width: 50px;
+    height: 50px;
+    background-color: #B36B1F;
+    border:solid 2px #B47D22;
+    margin-top:20px;
+    margin-left: 20px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 9999;
+}
+
+.fa-car-side{
+    position:absolute;
+    top:10px;
+    right: -20px;
+    font-size: 30px;
+    color:#FFDA7A;
+    z-index: -99;
+}
+
+.card{
+    background-color: #E28525;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.card-title{
+    color:#FEEFCE;
+}
+
+.card-text{
+    color:#FFC57D;
+}
+
+.btn{
+    border-radius: 20px 20px;
+    padding:9px 30px;
+    background-color: #EFF3F4;
+    outline: none;
+    border:none;
+    color:#E28525;
+}
+
+.card:nth-child(2), .card:nth-child(3){
+    background-color: #016972;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.card:nth-child(3){
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius: 5px;
+}
+
+.card:nth-child(3){
+    background-color: #00403F;
+}
+.car-icon-1{
+    background-color: #035457;
+    border:solid 2px #035457;
+}
+
+.car-icon-2{
+    background-color: #023433;
+    border: solid 2px #013533;
+}
+
+.fa-car-side-1{
+    color:#2DB0BA;
+}
+
+.fa-car-side-2{
+    color:#31B59E;
+}
+
+.card-title-1{
+    color:#DBFFFF;
+}
+
+.card-title-2{
+    color:#DEF1ED;
+}
+
+.card-text-1{
+    color:#76C7CB;
+}
+
+.card-text-2{
+    color:#94C2C2;
+}
+
+.btn-1{
+    color:#4E6A6D;
+    background-color: #EFF3F2;
+}
+
+.btn-2{
+    color:#738682;
+}
